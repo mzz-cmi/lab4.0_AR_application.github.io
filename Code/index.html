@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Inspeção Não Intrusiva 4.0</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+
+    <a-scene embedded arjs="sourceType: webcam;">
+
+        <!-- Title -->
+        <a-entity position="0 2 -5">
+            <a-text value="Laboratório de Inspeção Não Intrusiva 4.0" font="mozillavr" width="7" align:center></a-text>
+        </a-entity>
+
+        <!-- AR Element -->
+        <a-marker type="pattern" url="https://raw.githubusercontent.com/mzz-cmi/lab4.0_AR_application.github.io/main/Imagens/CERTI_logo-marker.png">
+            <!-- Image-Connected Text -->
+            <a-entity position="0 0 0">
+                <a-text value="Visão computacional para inspeção de controle remoto" font="mozillavr" color="red" width="7" align: center></a-text>
+            </a-entity>
+        </a-marker>
+
+        <!-- Display Camera Feed -->
+        <a-entity camera></a-entity>
+
+    </a-scene>
+
+</body>
+</html>
